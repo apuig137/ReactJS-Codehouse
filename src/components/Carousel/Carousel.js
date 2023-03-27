@@ -2,22 +2,22 @@ import "./Carousel.css"
 
 const Carousel = () => {
     return (
-        <div>
+        <div className="carousel">
             <div id="carouselExampleIndicators" className="carousel slide">
-                <div class="carousel-indicators">
+                <div className="carousel-indicators">
                     <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" className="active" aria-current="true" aria-label="Slide 1"></button>
                     <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
                     <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
             </div>
             <div className="carousel-inner">
                 <div className="carousel-item active">
-                    <img src="./img/notebook.jpg" className="d-block w-100 carousel-img" alt="Notebook"/>
+                    <img src="./img/automovil.jpg" className="d-block w-100 carousel-img" alt="BMW"/>
                 </div>
                 <div className="carousel-item">
-                    <img src="./img/smartphones.jpg" className="d-block w-100 carousel-img" alt="Smarphones"/>
+                    <img src="./img/automovil2.jpg" className="d-block w-100 carousel-img" alt="Mercedes"/>
                 </div>
                 <div className="carousel-item">
-                    <img src="./img/smartwatch.jpg" className="d-block w-100 carousel-img" alt="Smartwatch"/>
+                    <img src="./img/auto.jpg" className="d-block w-100 carousel-img" alt="Ford"/>
                 </div>
             </div>
             <button className="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
@@ -28,7 +28,7 @@ const Carousel = () => {
                 <span className="carousel-control-next-icon" aria-hidden="true"></span>
                 <span className="visually-hidden">Next</span>
             </button>
-        </div>
+            </div>
         </div>
         
     )

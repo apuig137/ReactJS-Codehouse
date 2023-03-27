@@ -1,27 +1,39 @@
+.carousel{
+    width: 100%;
+    margin: 10vh 0 auto auto;
+}
+
 .carousel-img{
-    height: 600px;
+    height: 90vh;
 }
 
-@media (max-width: 1150px){
+
+@media (max-width: 1500px){
     .carousel-img{
-        height: 500px;
+        height: 85vh;
     }
 }
 
-@media (max-width: 950px){
+@media (max-width: 1250px){
     .carousel-img{
-        height: 400px;
+        height: 70vh;
     }
 }
 
-@media (max-width: 650px){
+@media (max-width: 1000px){
     .carousel-img{
-        height: 300px;
+        height: 55vh;
     }
 }
 
-@media (max-width: 450px){
+@media (max-width: 750px){
     .carousel-img{
-        height: 200px;
+        height: 40vh;
+    }
+}
+
+@media (max-width: 500px){
+    .carousel-img{
+        height: 25vh;
     }
 }

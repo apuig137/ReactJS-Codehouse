@@ -1,7 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=PT+Serif&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200&family=PT+Serif&family=Roboto:wght@300&display=swap');
 *{
-    font-family: 'PT Serif', serif;
+    font-family: 'Roboto', sans-serif;
 }
 
 .title-page{
@@ -10,4 +9,18 @@
 
 .title-page{
     padding: 100px 0;
+}
+
+.item-list-container{
+    width: 80%;
+    margin-left: 20%;
+    margin-right: 0;
+}
+
+@media (max-width: 600px){
+    .item-list-container{
+        width: 70%;
+        margin-left: 30%;
+        margin-right: 0;
+    }
 }

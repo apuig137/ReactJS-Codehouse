@@ -1,17 +1,17 @@
 import "./Navbar.css"
 import CartWidget from "../CartWidget/CartWidget"
+import { Link } from "react-router-dom"
 
 const Navbar = () => {
     return (
-        <nav className = "navbar">
-            <h1 className = "tittle">INSUMOS RP-TECH</h1>
-            <div className = "navItems">
-                <button className="btn">Smartphones</button>
-                <button className="btn">Smartwatchs</button>
-                <button className="btn">Notebooks</button>
-                <CartWidget/>
-            </div>
-        </nav>
+        <div class="navb">
+            <ul>
+                <li className="item-effect"><Link to={`/`}>Inicio</Link></li>
+                <li className="item-effect"><a href="#">Sobre nosotros</a></li>
+                <li className="item-effect"><a href="#">Contactanos</a></li>
+                <li className="cart-li"><a href="#"><CartWidget/></a></li>
+            </ul>
+        </div>
     )
 }
 
