@@ -36,4 +36,11 @@
 
 .navb ul .item-effect a:hover{
     background-color: #cccccc;
+    color: #242424;
+}
+
+@media (max-width: 500px){
+    .navb ul li a{
+        font-size: x-small;
+    }
 }

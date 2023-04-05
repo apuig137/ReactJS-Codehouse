@@ -4,7 +4,7 @@ import { useState, useEffect } from "react"
 import ItemList from "../ItemList/ItemList"
 import { useParams } from "react-router-dom"
 
-const ItemListFilter = ({ greeting }) => {
+const ItemListFilter = () => {
     let [vehiculos, setVehiculos] = useState([])
 
     let { category } = useParams()

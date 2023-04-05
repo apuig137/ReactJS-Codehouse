@@ -1,0 +1,19 @@
+.item-cart-container{
+    border: none;
+    border-radius: 15px;
+    padding: 8px;
+    display: flex;
+    background-color: #474747;
+    color: #fff;
+    position: relative;
+    margin-bottom: 10px;
+}
+
+.p-cart{
+    margin: 0 30px;
+}
+
+.price{
+    right: 0;
+    position: absolute;
+}

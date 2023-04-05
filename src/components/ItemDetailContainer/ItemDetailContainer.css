@@ -1,9 +1,29 @@
 .item-detail-container{
     width: 80%;
-    height: 100vh;
+    height: 80vh;
     margin-left: 20%;
     margin-right: 0;
+    margin-top: 100px;
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+@media (max-width: 1000px){
+    .item-detail-container{
+        height: 100vh;
+    }
+}
+
+@media (max-width: 800px){
+    .item-detail-container{
+        height: 80vh;
+    }
+}
+
+@media (max-width: 600px){
+    .item-detail-container{
+        width: 70%;
+        margin-left: 30%;
+    }
 }
