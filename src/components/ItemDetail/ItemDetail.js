@@ -1,33 +1,28 @@
 import "./ItemDetail.css"
-import { useCart } from '../../context/CartContext'
-import { Link } from 'react-router-dom'
 import ItemCount from "../ItemCount/ItemCount"
 
+import { useCart } from '../../context/CartContext'
+import { Link } from 'react-router-dom'
 
-let ItemDetail = ({id, marca, nombre, precio, modelo, kilometraje, img, transmision, potencia, combustible, stock}) => {
-    
+let ItemDetail = ({id, category, name, price, description, img, stock}) => {
     let { addItem, isInCart } = useCart()
 
     const handleOnAdd = (quantity) => {
         const productToAdd = {
-            id, img, marca, modelo, nombre, precio, quantity
+            id,category,name,price,description,img,quantity,stock
         }
         addItem(productToAdd)
     }
 
     return(
         <div className="item-detail">
-            <img src={img} alt={nombre}/>
+            <img src={img} alt={name}/>
             <div className="card-info">
                 <div className="first-info">
-                    <h3>U$S{precio}</h3>
-                    <p>{modelo} | {kilometraje}</p>
+                    <h3>U$S{price}</h3>
+                    <p>{name}</p>
                 </div>
-                <p>{marca} {nombre}</p>
-                <p>{kilometraje} kilometros</p>
-                <p>Transmision: {transmision}</p>
-                <p>Potencia: {potencia}</p>
-                <p>Tipo de combustible: {combustible}</p>
+                <p>{description}</p>
             </div>
             <div className="buttons-detail">
                 {

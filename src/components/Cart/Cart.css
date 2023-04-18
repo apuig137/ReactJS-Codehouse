@@ -4,3 +4,13 @@
     padding: 20px;
     width: 100%;
 }
+
+.remove-all{
+    color: #fff;
+    font-weight: bold;
+    padding: 10px;
+    text-align: center;
+    border: none;
+    border-radius: 10px;
+    background-color: #ff4848;
+}

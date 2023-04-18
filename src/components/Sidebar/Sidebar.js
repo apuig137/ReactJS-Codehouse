@@ -22,31 +22,37 @@ const Sidebar = () => {
         <ul className="list">
             <li className="list-item">
                 <div className="list-button">
-                    <Link to="/categoria/3%20puertas" className="sidebar-link">3 puertas</Link>
+                    <Link to="/category/monitor" className="sidebar-link">Monitores</Link>
                 </div>
             </li>
 
             <li className="list-item">
                 <div className="list-button">
-                    <Link to="/categoria/5%20puertas" className="sidebar-link">5 puertas</Link>
+                    <Link to="/category/placa%20grafica" className="sidebar-link">Placas de video</Link>
                 </div>
             </li>
 
             <li className="list-item">
                 <div className="list-button">
-                    <Link to="/categoria/Sedan" className="sidebar-link">Sedan</Link>
+                    <Link to="/category/teclado" className="sidebar-link">Teclados</Link>
                 </div>
             </li>
 
             <li className="list-item">
                 <div className="list-button">
-                    <Link to="/categoria/SUV" className="sidebar-link">SUV</Link>
+                    <Link to="/category/placa%20madre" className="sidebar-link">Placas madre</Link>
                 </div>
             </li>
 
             <li className="list-item">
                 <div className="list-button">
-                    <Link to="/categoria/Camioneta" className="sidebar-link">Camioneta</Link>
+                    <Link to="/category/auricular" className="sidebar-link">Auriculares</Link>
+                </div>
+            </li>
+
+            <li className="list-item">
+                <div className="list-button">
+                    <Link to="/category/procesador" className="sidebar-link">Procesadores</Link>
                 </div>
             </li>
         </ul>

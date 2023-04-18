@@ -11,13 +11,13 @@ const Carousel = () => {
             </div>
             <div className="carousel-inner">
                 <div className="carousel-item active">
-                    <img src="./img/automovil.jpg" className="d-block w-100 carousel-img" alt="BMW"/>
+                    <img src="https://www.todofondos.net/wp-content/uploads/lenovo-pro-gaming-pc-resolucion-hd-4k-scaled.jpg" className="d-block w-100 carousel-img" alt="pc gamer"/>
                 </div>
                 <div className="carousel-item">
-                    <img src="./img/automovil2.jpg" className="d-block w-100 carousel-img" alt="Mercedes"/>
+                    <img src="https://img1.goodfon.com/original/1920x1080/9/60/nvidia-geforce-gtx-980.jpg" className="d-block w-100 carousel-img" alt="placa de video"/>
                 </div>
                 <div className="carousel-item">
-                    <img src="./img/auto.jpg" className="d-block w-100 carousel-img" alt="Ford"/>
+                    <img src="https://static.techspot.com/articles-info/2638/images/2023-03-03-image.jpg" className="d-block w-100 carousel-img" alt="monitor"/>
                 </div>
             </div>
             <button className="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">

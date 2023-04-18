@@ -1,10 +1,10 @@
 import Item from "../Item/Item"
 import "./ItemList.css"
 
-let ItemList = ({vehiculos}) => {
+let ItemList = ({products}) => {
     return(
         <div className="item-list">
-            {vehiculos.map(vehiculo => <Item key={vehiculo.id} {...vehiculo}/>)}
+            {products.map(product => <Item key={product.id} {...product}/>)}
         </div>
     )
 }
