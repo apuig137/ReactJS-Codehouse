@@ -1,13 +1,13 @@
 import "./ItemCart.css"
 import { useCart } from "../../context/CartContext"
 
-let ItemCart = ({ img, quantity, price, name, id }) => {
+let ItemCart = ({ quantity, price, name, id }) => {
     let { removeItem } = useCart()
 
     return (
         <div className="item-cart-container">
-            <p className="p-cart">{name}</p>
-            <p className="p-cart price"> x{quantity} U$S{price}</p>
+            <p className="p-cart">x{quantity} {name}</p>
+            <p className="p-cart price">U$S{price}</p>
             <button className="button-cart" onClick={ () => removeItem(id) }>X</button>
         </div>
     )

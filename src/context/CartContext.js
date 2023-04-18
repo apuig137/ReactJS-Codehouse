@@ -1,12 +1,12 @@
 import { createContext, useState, useContext } from 'react';
 
-let CartContext = createContext('valor inicial')
+const CartContext = createContext('valor inicial')
 
-export let CartProvider = ({ children }) => {
-    let [cart, setCart] = useState([])
+export const CartProvider = ({ children }) => {
+    const [cart, setCart] = useState([])
     console.log(cart)
 
-    let addItem = (productToAdd) => {
+    const addItem = (productToAdd) => {
         if(!isInCart(productToAdd.id)) {
             setCart(prev => [...prev, productToAdd])
         } else {
@@ -14,38 +14,46 @@ export let CartProvider = ({ children }) => {
         }
     }
 
-    let isInCart = (id) => {
+    const isInCart = (id) => {
         return cart.some(prod => prod.id === id)
     }
 
-    let removeItem = (id) => {
-        let updatedCart = cart.filter(prod => prod.id !== id)
+    const removeItem = (id) => {
+        const updatedCart = cart.filter(prod => prod.id !== id)
         setCart(updatedCart)
     }
 
-    let removeAll = () => {
+    const removeAll = () => {
         setCart([])
     }
 
-    let getTotalQuantity = () => {
+    const getTotalQuantity = () => {
         let totalQuantity = 0
-
         cart.forEach(prod => {
             totalQuantity += prod.quantity
         })
-
         return totalQuantity
     }
 
-    let totalQuantity = getTotalQuantity()
+    const totalQuantity = getTotalQuantity()
+
+    const getTotal = () => {
+        let total = 0
+        cart.forEach(prod => {
+            total += prod.quantity * prod.price
+        })
+        return total
+    }
+
+    const total = getTotal()
 
     return (
-        <CartContext.Provider value={{ cart, addItem, totalQuantity, removeItem, isInCart, removeAll }}>
+        <CartContext.Provider value={{ cart, addItem, totalQuantity, removeItem, isInCart, removeAll,  total }}>
             { children }
         </CartContext.Provider>
     )
 }
 
-export let useCart = () => {
+export const useCart = () => {
     return useContext(CartContext)
 }

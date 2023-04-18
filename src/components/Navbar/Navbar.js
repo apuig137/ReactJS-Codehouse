@@ -9,7 +9,7 @@ const Navbar = () => {
                 <li className="item-effect"><Link to={`/`}>Inicio</Link></li>
                 <li className="item-effect"><a href="#">Sobre nosotros</a></li>
                 <li className="item-effect"><a href="#">Contactanos</a></li>
-                <li className="cart-li"><a href="#"><CartWidget/></a></li>
+                <CartWidget/>
             </ul>
         </div>
     )

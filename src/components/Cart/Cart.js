@@ -2,8 +2,8 @@ import "./Cart.css"
 import { useCart } from "../../context/CartContext"
 import ItemCart from "../ItemCart/ItemCart"
 
-let Cart = () => {
-    let { cart, removeAll } = useCart()
+const Cart = () => {
+    const { cart, removeAll, total } = useCart()
 
     return (
         <div className="cart-container">
@@ -11,6 +11,7 @@ let Cart = () => {
             {
             cart.map(item => <ItemCart key={item.id} {...item}/>)}
             <button className="remove-all" onClick={ removeAll }>VACIAR CARRITO</button>
+            <h2>TOTAL: ${total}</h2>
         </div>
     )
 }

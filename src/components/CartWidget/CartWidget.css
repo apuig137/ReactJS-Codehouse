@@ -1,5 +1,19 @@
 .cart-widget{
     display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #CCCCCC;
+    color: #000;
+    padding: 3px;
+    border-radius: 5px;
+    width: 70px;
+    height: 70px;
+    transition-duration: 1s;
+}
+
+.cart-widget:hover{
+    background-color: #6e6e6e;
+    color: #fff;
 }
 
 .cart{
