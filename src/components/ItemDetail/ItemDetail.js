@@ -16,18 +16,19 @@ let ItemDetail = ({id, category, name, price, description, img, stock}) => {
 
     return(
         <div className="item-detail">
-            <img src={img} alt={name}/>
+            <div className="img">
+                <img src={img} alt={name}/>
+            </div>
+            
             <div className="card-info">
-                <div className="first-info">
-                    <h3>U$S{price}</h3>
-                    <p>{name}</p>
-                </div>
+                <h3>U$S{price}</h3>
+                <h4>{name}</h4>
                 <p>{description}</p>
             </div>
             <div className="buttons-detail">
                 {
                     isInCart(id) ? (
-                        <Link className="link-detail" to="/cart">Terminar compra</Link>
+                        <Link className="link-detail" to="/cart">Ir al carrito</Link>
                     ) : (
                         <ItemCount stock={ stock } onAdd={handleOnAdd}/>
                     )

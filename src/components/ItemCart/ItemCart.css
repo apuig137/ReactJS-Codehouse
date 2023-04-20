@@ -18,8 +18,12 @@
 .price{
     right: 4%;
     position: absolute;
+    grid-area: price;
 }
 
+.name{
+    grid-area: name;
+}
 
 .button-cart{
     position: absolute;
@@ -31,4 +35,36 @@
     font-weight: bold;
     border: none;
     border-radius: 0 15px 15px 0;
+}
+
+
+
+@media (max-width: 600px){
+    .item-cart-container{
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: auto;
+        grid-template-areas: "name" "price";
+        height: 100px;
+        align-items: center;
+        justify-content: center;
+    }
+    .button-cart{
+        height: 100px;
+    }
+    .name{
+        margin-right: 50px;
+    }
+    .price{
+        position: relative;
+    }
+}
+
+@media (max-width: 420px){
+    .item-cart-container{
+        height: 150px;
+    }
+    .button-cart{
+        height: 150px;
+    }
 }

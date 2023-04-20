@@ -15,6 +15,10 @@
     height: 30px;
 }
 
+.counter p{
+    padding: 0 8px;
+}
+
 .count-button{
     width: 30px;
     height: 30px;

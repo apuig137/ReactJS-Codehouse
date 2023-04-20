@@ -1,0 +1,34 @@
+.checkout{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-left: 20%;
+    margin-top: 100px;
+    height: 89vh;
+    width: 100%;
+}
+
+.checkout h3{
+    background-color: #CCCCCC;
+    color: #474747;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.checkout-button{
+    margin-top: 10px;
+    background-color: #3561a1;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    font-weight: bold;
+    transition-duration: 1s;
+}
+
+.checkout-button:hover{
+    border: 1px solid #3561a1;
+    background-color: #CCCCCC;
+    color: #474747;
+}

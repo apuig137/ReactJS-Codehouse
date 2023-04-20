@@ -16,6 +16,12 @@
     color: #fff;
 }
 
+.cart-widget p{
+    position: relative;
+    top: 9px;
+    font-weight: bold;
+}
+
 .cart{
     width: 30px;
     height: 30px;

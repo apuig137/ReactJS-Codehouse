@@ -18,7 +18,6 @@ const ItemListContainer = ({ greeting }) => {
         const productsRef = category 
             ? query(collection(db, "products"), where("category", "==", category))
             : collection(db, "products")
-
         getDocs(productsRef)
             .then(snapshot => {
                 const productAdapted = snapshot.docs.map(doc => {
