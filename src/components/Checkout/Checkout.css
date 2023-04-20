@@ -14,21 +14,22 @@
     color: #474747;
     padding: 10px;
     border-radius: 10px;
+    margin: 0 10px;
+    width: 50vw;
 }
 
-.checkout-button{
-    margin-top: 10px;
-    background-color: #3561a1;
-    color: #fff;
-    padding: 10px;
-    border: none;
-    border-radius: 10px;
-    font-weight: bold;
-    transition-duration: 1s;
+.checkout-container{
+    margin-left: 20%;
+    margin-top: 100px;
+    height: 89vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.checkout-button:hover{
-    border: 1px solid #3561a1;
-    background-color: #CCCCCC;
-    color: #474747;
+@media (max-width: 600px){
+    .checkout-container, .checkout{
+        margin-left: 30%;
+    }
 }

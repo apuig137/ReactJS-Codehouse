@@ -6,7 +6,8 @@ const Form = ({ onConfirm }) => {
     const [email, setEmail] = useState("")
     const [phone, setPhone] = useState("")
 
-    const handleSubmit = () => {
+    const handleSubmit = (e) => {
+        e.preventDefault()
         const userData = { name, phone, email }
         onConfirm(userData)
     }
@@ -19,6 +20,7 @@ const Form = ({ onConfirm }) => {
             <input type="email" className="form-item" value={email} onChange={(e) => setEmail(e.target.value)}/>
             <p className="p-form-item">Numero de telefono</p>
             <input type="tel" className="form-item" value={phone} onChange={(e) => setPhone(e.target.value)}/>
+            <button className='checkout-button' type='submit'>CREAR ORDEN</button>
         </form>
     )
 }

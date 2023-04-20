@@ -1,11 +1,12 @@
 .form{
     display: flex;
     flex-direction: column;
+    align-items: center;
     padding: 20px;
 }
 
 .form-item{
-    width: 40vw;
+    width: 50vw;
     height: 3.5vh;
     border: 1px solid #474747;
     border-radius: 3px;
@@ -14,10 +15,28 @@
 }
 
 .p-form-item{
-    width: 40vw;
+    width: 50vw;
     height: 3.5vh;
     text-align: start;
     position: relative;
     top: 23px;
     font-weight: bold;
+}
+
+.checkout-button{
+    width: 150px;
+    margin-top: 20px;
+    background-color: #3561a1;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    font-weight: bold;
+    transition-duration: 1s;
+}
+
+.checkout-button:hover{
+    border: 1px solid #3561a1;
+    background-color: #CCCCCC;
+    color: #474747;
 }
