@@ -44,8 +44,7 @@ const ItemListContainer = ({ greeting }) => {
     
     if(category){
         return (
-            <div className="item-list-container">
-                <h1 className="title-page">{greeting}</h1>
+            <div className="item-list-filter">
                 <ItemList products={products}/>
             </div>
         )
@@ -54,10 +53,8 @@ const ItemListContainer = ({ greeting }) => {
     return (
         <div className="item-list-container">
             <Carousel/>
-            <h1 className="title-page">{greeting}</h1>
             <ItemList products={products}/>
         </div>
-        
     )
 }
 

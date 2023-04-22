@@ -30,7 +30,11 @@ let ItemDetail = ({id, category, name, price, description, img, stock}) => {
                     isInCart(id) ? (
                         <Link className="link-detail" to="/cart">Ir al carrito</Link>
                     ) : (
-                        <ItemCount stock={ stock } onAdd={handleOnAdd}/>
+                            (stock === 0) ? (
+                                <p className="no-stock">Sin stock</p>
+                            ) : (
+                                <ItemCount stock={ stock } onAdd={handleOnAdd}/>
+                            )
                     )
                 }
             </div>

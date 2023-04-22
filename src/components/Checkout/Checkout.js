@@ -11,11 +11,11 @@ import Form from "../Form/Form"
 const Checkout = () => {
     const { cart, total, removeAll } = useCart()
     const [orderId, setOrderId] = useState("")
-    const [load, setLoad] = useState(true)
+    const [load, setLoad] = useState(false)
 
     const createOrder = async (userData) => {
+        setLoad(true)
         try{
-            setLoad(true)
             const objOrder = {
                 buyer: userData,
                 items: cart,

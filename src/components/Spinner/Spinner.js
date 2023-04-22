@@ -1,8 +1,8 @@
 let Spinner = () => {
     return (
-        <div class="d-flex justify-content-center" style={{ position: "relative", top: "50vh", left: "60vw" }}>
-            <div class="spinner-border" role="status">
-                <span class="visually-hidden">Loading...</span>
+        <div className="d-flex justify-content-center" style={{ position: "relative", top: "50vh", left: "60vw" }}>
+            <div className="spinner-border" role="status">
+                <span className="visually-hidden">Loading...</span>
             </div>
         </div>
     )

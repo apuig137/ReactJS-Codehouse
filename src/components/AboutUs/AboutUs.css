@@ -1,0 +1,36 @@
+.about-us{
+    margin-left: 20%;
+    margin-top: 100px;
+    height: 89vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0 5vw;
+}
+
+.about-text{
+    background-color: #CCCCCC;
+    border-radius: 15px;
+    padding: 15px;
+}
+
+.about-title{
+    color: #000;
+    font-size: xx-large;
+    font-weight: bold;
+    margin-bottom: 50px;
+}
+
+@media(max-width:600px){
+    .about-us{
+        margin-left: 30%;
+    }
+}
+
+@media(max-width:500px){
+    .about-us{
+        height: 100%;
+        margin-bottom: 30px;
+    }
+}
