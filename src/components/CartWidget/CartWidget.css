@@ -28,3 +28,13 @@
     margin-right: 10px;
     cursor: pointer;
 }
+
+@media(max-width:650px){
+    .cart-widget{
+        height: 50px;
+        width: 50px;
+    }
+    .cart{
+        margin-right: 5px;
+    }
+}
