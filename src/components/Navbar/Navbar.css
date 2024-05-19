@@ -11,6 +11,8 @@
 
 .img-logo{
     margin-left: 3vw;
+    width: 100px;
+    height: 75px;
 }
 
 .navb ul{
@@ -68,5 +70,14 @@
     }
     .brand{
         font-size: medium;
+    }
+}
+
+@media(max-width: 450px){
+    .img-logo{
+        display: none;
+    }
+    .navb{
+        justify-content: center;
     }
 }

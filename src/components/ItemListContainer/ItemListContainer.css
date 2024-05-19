@@ -16,10 +16,9 @@
     margin-top: 100px;
 }
 
-@media (max-width: 600px){
+@media (max-width: 700px){
     .item-list-container{
-        width: 70%;
-        margin-left: 30%;
-        margin-right: 0;
+        width: 100%;
+        margin-left: 0%;
     }
 }

@@ -51,9 +51,9 @@
     margin: 0 auto;
 }
 
-@media (max-width: 600px){
+@media (max-width: 700px){
     .sidebar{
-        width: 30%;
+        display: none;
     }
 }
 
