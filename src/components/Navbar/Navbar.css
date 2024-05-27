@@ -52,10 +52,7 @@
 
 @media(max-width: 650px){
     .navb ul li a{
-        font-size: x-small;
-    }
-    .brand{
-    font-size: large;
+        font-size: small;
     }
     .navb ul{
         padding-left: 0;
@@ -64,16 +61,8 @@
         margin: 0;
     }
 }
-@media(max-width: 510px){
-    .navb ul li a{
-        font-size: x-small;
-    }
-    .brand{
-        font-size: medium;
-    }
-}
 
-@media(max-width: 450px){
+@media(max-width: 500px){
     .img-logo{
         display: none;
     }

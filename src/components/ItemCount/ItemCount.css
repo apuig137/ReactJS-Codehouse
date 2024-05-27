@@ -58,8 +58,11 @@
     border-bottom: 2px solid #6e6e6e;
 }
 
-@media (max-width: 450px){
+@media (max-width: 460px){
     .add-button{
         font-size: small;
+    }
+    .controls{
+        margin: 5px;
     }
 }

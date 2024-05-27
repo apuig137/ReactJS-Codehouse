@@ -33,12 +33,6 @@ iframe{
     height: 23vw;
 }
 
-@media(max-width:600px){
-    .contact{
-        margin-left: 30%;
-    }
-}
-
 @media(max-width:1000px){
     .contact{
         flex-direction: column;
@@ -55,5 +49,12 @@ iframe{
     iframe{
         height: 25vh;
         width: 50vw;
+    }
+}
+
+@media(max-width:700px){
+    .contact{
+        width: 100%;
+        margin-left: 0;
     }
 }

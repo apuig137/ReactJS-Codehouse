@@ -1,5 +1,5 @@
 .item-detail{
-    width: 55%;
+    width: 55vw;
     display: grid;
     border: 1px solid #c9c9c9;
     border-radius: 5px;
@@ -13,7 +13,7 @@
     border-bottom: 1px solid #c9c9c9;
 }
 
-.item-detail .img img{
+.img img{
     height: 45vh;
     grid-area: img;
 }
@@ -88,16 +88,15 @@
     }
 }
 
-@media (max-width: 1000px){
-    .item-detail{
-        grid-template-columns: repeat(1, 1fr);
-        grid-template-areas: "img" "card-info" "buttons-detail";
+@media (max-width: 620px){
+    .card-info{
+        width: 80vw;
+        margin: 1px;
     }
-}
-
-
-@media (max-width: 820px){
-    .item-detail{
-        grid-template-columns: repeat(1, 1fr);
+    .img{
+        height: 300px;
+    }
+    .img img{
+        height: 300px;
     }
 }

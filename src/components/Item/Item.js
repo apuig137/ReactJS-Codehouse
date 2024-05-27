@@ -5,7 +5,7 @@ let Item = ({id, name, price, img}) => {
     return (
         <div className="card-car">
             <img src={img} alt={name}/>
-            <div className="card-info">
+            <div className="card-info-list">
                 <div className="first-info">
                     <h3>U$S{price}</h3>
                     <p>{name}</p>
