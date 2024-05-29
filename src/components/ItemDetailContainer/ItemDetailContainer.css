@@ -15,3 +15,9 @@
         margin-left: 0;
     }
 }
+
+@media (max-height: 600px){
+    .item-detail-container{
+        height: 100vh;
+    }
+}

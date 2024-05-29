@@ -100,3 +100,9 @@
         height: 300px;
     }
 }
+
+@media (max-height: 600px){
+    .item-detail{
+        height: 90vh;
+    }
+}
